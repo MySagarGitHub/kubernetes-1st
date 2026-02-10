@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    app: my-app
+    department: engineering
+spec:
+  containers:
+  - name: my-container
+    image: kicbase/echo-server:latest
+    ports:          
+    - containerPort: 8080  
