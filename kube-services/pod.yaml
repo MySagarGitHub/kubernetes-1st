@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sagar-pod
+  labels:
+    app: sagar-app
+spec:
+  containers:
+  - name: sagar-container
+    image: kicbase/echo-server:latest
+    ports:
+    - containerPort: 8080
