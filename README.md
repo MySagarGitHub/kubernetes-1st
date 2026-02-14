@@ -13,3 +13,9 @@
 -kubectl get svc(checks creation of the services)
 <br>
 -kubectl exec -it pod-name -- sh(execute linux cmd on pod)
+
+
+
+
+
+kubectl port-forward svc/app_name 3000:80 --address 0.0.0.0

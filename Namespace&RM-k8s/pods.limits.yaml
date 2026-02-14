@@ -1,0 +1,17 @@
+apiversion: v1
+kind: Pod
+metadata:
+  name: resource-limits-pod
+  namespace: dev-namespace
+spec:
+  containers: 
+  - name: resource-limits-container
+    image: busybox
+    command: ["sh", "-c", "echo sagar! && sleep 3600"]
+    resources:
+      limits:
+        memory: "128Mi" # mebibytes
+        cpu: "500m" # millicores
+      requests:
+        memory: "64Mi" # mebibytes
+        cpu: "250m" # millicores
